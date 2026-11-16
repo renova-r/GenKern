@@ -6,7 +6,7 @@ cat("Copyright Lucy and Aykroyd 2000\n")
 cat("last update November 2013\n")
 cat("requires KernSmooth\n\n")
 
-# required packages -  Wand and Jones' KernSmooth package mainly for 
+# required packages -  Wand and Jones' KernSmooth package mainly for
 # the dpik() function for the default h's, but it's useful to have anyway
 require(KernSmooth)
 

@@ -67,7 +67,7 @@ only be treated as a first order aproximation for non-uniform bins.
 */
 /* The bin values MUST be in ascending order */
 
-getlims(double *vals, double *limits, int *bins)
+void getlims(double *vals, double *limits, int *bins)
 {
 int ctr;
 
@@ -83,5 +83,5 @@ int ctr;
 /* assign a value to the higher edge of the topmost bin */
 *(limits + *bins) = *(vals + *bins - 1) + ((*(vals + *bins -1) - *(vals + *bins - 2)) /2);
 
-return(*limits);
+return;
 }

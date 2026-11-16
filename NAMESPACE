@@ -1,3 +1,4 @@
-useDynLib(GenKern)
+useDynLib(GenKern, .registration = TRUE, .fixes = "C_")
+importFrom("stats", "cor", "na.fail", "na.omit")
+importFrom("KernSmooth", "dpik")
 export(KernSec, KernSur, nearest, per)
-
